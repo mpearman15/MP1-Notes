@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Hello world!",
-  "description": "Hello world extension example!",
+  "name": "notes",
+  "description": "notes extension!",
   "version": "1.0",
   "action": {
       "default_popup": "popup.html",
