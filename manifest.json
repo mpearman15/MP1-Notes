@@ -8,8 +8,7 @@
       "default_icon": "icon.png"
   },
   "permissions": [
-    "storage",
-    "tabs"
+    "storage"
   ],
   "content_scripts": [
     {
