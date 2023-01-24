@@ -39,11 +39,9 @@
 // const textbox = document.getElementById('notes');
 // console.log(textbox.value);
 // // console.log(savedNote);
-document.body.onload = function() {
-  chrome.storage.sync.get("data", function(items) {
-    if (!chrome.runtime.error) {
-      console.log(items);
-      document.getElementById("noteText").value = items.data;
-    }
-  });
-}
+chrome.storage.sync.get("data", function(items) {
+  if (!chrome.runtime.error) {
+    console.log(items);
+    document.getElementById("noteText").value = items.data;
+  }
+});
