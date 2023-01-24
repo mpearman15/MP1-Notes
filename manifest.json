@@ -6,5 +6,18 @@
   "action": {
       "default_popup": "popup.html",
       "default_icon": "icon.png"
-  }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+        "matches": [
+            "*://*/*"
+        ],
+        "js": [
+            "content-scripts/page.js"
+        ]
+    }
+  ]
 }
