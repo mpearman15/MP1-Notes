@@ -39,6 +39,6 @@
 // const textbox = document.getElementById('notes');
 // console.log(textbox.value);
 // // console.log(savedNote);
-chrome.storage.sync.get("text-area", function (items)) {
+chrome.storage.sync.get("text-area", function (items) {
   console.log(items);
-}
+});
