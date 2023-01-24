@@ -39,7 +39,7 @@
 // const textbox = document.getElementById('notes');
 // console.log(textbox.value);
 // // console.log(savedNote);
-chrome.storage.sync.get("data", function(items) {
+chrome.storage.sync.get("noteText", function(items) {
   console.log(items);
   document.getElementById("noteText").value = items.data;
 });
