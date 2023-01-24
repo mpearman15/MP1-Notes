@@ -37,7 +37,7 @@
 //   });
 // }
 
-var notes = document.getElementById('notes').value
+var notes = document.getElementById('notes').value;
 console.log(notes);
 // chrome.storage.sync.set(jsonfile, function(){
 
