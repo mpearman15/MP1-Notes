@@ -38,7 +38,11 @@
 // }
 
 chrome.storage.sync.get("noteData", function(items) {
-  console.log(items.noteData);
+  // if (!items.noteData) {
+  //   let notes = "";
+  // }
+
+  // console.log(items.noteData);
   // document.getElementById("noteText").value = items.noteData;
   console.log(document.getElementById("noteText").value);
 });
