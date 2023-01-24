@@ -37,5 +37,6 @@
 //   });
 // }
 
-var notes = document.getElementById('notes').value;
-console.log(notes);
+const textbox = document.querySelector(".notebox");
+textbox.value = savedNote;
+console.log(savedNote);
