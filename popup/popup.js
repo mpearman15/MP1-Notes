@@ -36,7 +36,6 @@
 //       });
 //   });
 // }
-let savedNote = '';
 const textbox = document.getElementById('notes');
-textbox.value = savedNote;
-console.log(savedNote);
+console.log(textbox.value);
+// console.log(savedNote);
