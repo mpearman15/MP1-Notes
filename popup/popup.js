@@ -17,22 +17,28 @@
 //   });
 // });
 
-document.getElementById('saveButton').onclick = function(){
-  /*
-  Gets Notes and saves them in persistance storage.
-   */
-  var notes = document.getElementById('notes').value;
-  chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
-      /*
-      Gets the URL from tab in focus.
-       */
-      let url = tabs[0].url;
-      var jsonfile = {};
-      jsonfile[url] = notes;
-      console.log(jsonfile)
+// document.getElementById('saveButton').onclick = function(){
+//   /*
+//   Gets Notes and saves them in persistance storage.
+//    */
+//   var notes = document.getElementById('notes').value;
+//   chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+//       /*
+//       Gets the URL from tab in focus.
+//        */
+//       let url = tabs[0].url;
+//       var jsonfile = {};
+//       jsonfile[url] = notes;
+//       console.log(jsonfile)
 
-      chrome.storage.sync.set(jsonfile, function(){
-          // Notes saved
-      });
-  });
-}
+//       chrome.storage.sync.set(jsonfile, function(){
+//           // Notes saved
+//       });
+//   });
+// }
+
+var notes = document.getElementById('notes').value
+console.log(notes);
+// chrome.storage.sync.set(jsonfile, function(){
+
+// });
