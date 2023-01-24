@@ -16,8 +16,8 @@
             "*://*/*"
         ],
         "js": [
-            "content-scripts/page.js"
+            "content.js"
         ]
     }
-  ]
+]
 }
