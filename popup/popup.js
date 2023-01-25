@@ -1,15 +1,9 @@
-chrome.storage.sync.get("noteData", function(items) {
-  // if (!items.noteData) {
-  //   let notes = "";
-  // }
-
-  // console.log(items.noteData);
-  console.log(items);
-  document.getElementById("noteText").value = items.noteData;
-
+chrome.storage.sync.get(["notes"]).then((result) => {
+  document.getElementById("noteText").value = result.notes;
 });
 
-// document.getElementById('save').onclick = function () {
-//   var notes = document.getElementById("saveButton");
-
-// }
+document.getElementById("saveButton").onclick = function () {
+  var notes = document.getElementById("noteText").value;
+  console.log("saving!")
+  chrome.storage.sync.set({"notes": notes}, function () {});
+}
